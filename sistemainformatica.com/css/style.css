@@ -1,0 +1,139 @@
+html,body{height: 100%;}
+html::-webkit-scrollbar{
+    width: 10px;
+    background: white;}
+html::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #101d42;}
+html::scrollbar{
+    width: 10px;
+    background: white;}
+html::scrollbar-thumb{
+    background: #101d42;}
+
+*{margin: 0; padding: 0;}
+
+@font-face{
+    font-family: "Lato";
+    src: url('../fonts/Lato-Light.ttf');}
+body{
+    font-family: "Lato";
+    background: white;}
+
+@media screen and (min-width: 160px){
+    .container-fluid{
+        position: relative;
+        height: auto;
+        background: white;}
+    .header{
+        height: 200px;
+        background: white;}
+    .logo{
+        width: 220px;
+        height: 80px;
+        margin-top: 95px;
+        border: 1px solid white;
+        cursor: pointer;}
+
+    .section{
+        position: relative;
+        min-height: 500px;
+        background: white;}
+
+    .conteudo{
+        position: relative;
+        min-width: 200px;
+        max-width: 1005px;
+        height: auto;
+        padding: 5px;
+        text-align: center;
+        font-family: "Lato";
+        background: none;}
+    
+    .menuService{
+        width: 220px;
+        height: auto;
+        margin: 0 auto 50px auto;
+        background: white;}
+    .menuService h6{
+        max-width: 200px;
+        padding: 5px;
+        border-radius: 5px;
+        color: white;
+        background: #eb5e28;}
+    .menuService i{
+        margin: 10px;
+        font-size: 2em;
+        color: #101d42;
+        cursor: pointer;}
+    .menuService h3 i{
+        font-size: 1.5em;
+        cursor: default;}
+    .menuService #linkService{margin-top: 10px;}
+    .menuService #linkService a{
+        padding: 5px;
+        border-radius: 10px;
+        background: #101d42;
+        color: white;}
+    .menuService a{
+        text-decoration: none;
+        color: white;}
+    
+    .btnService, .btnServiceSmall, .btnGaleria, .btnMenuEmpresa, .btnMenuEmpresaSmall{
+        width: 220px;
+        margin: 10px auto;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        text-align: left;
+        font-size: 1.2em;
+        outline: none;
+        color: white;
+        background: #101d42;}
+
+    .footer{
+        height: auto;
+        margin-top: 6%;
+        background: #101d42;}
+    
+    .container_conteudo_footer{
+        min-width: 200px;
+        max-width: 300px;
+        height: auto;
+        margin: 0 auto;}
+    
+    .conteudo_footer{
+        display: block;
+        min-width: 200px;
+        max-width: 300px;
+        min-height: 150px;
+        margin-bottom: 15px;
+        word-break: normal;
+        color: white;}
+    .conteudo_footer h2{font-weight: bold;}
+    
+    
+    .copyright{
+        position: absolute;
+        bottom: auto;
+        min-width: 250px;
+        height: 30px;
+        left: 50%;
+        margin-top: 1%;
+        margin-left: -125px;
+        text-align: center;
+        background: white;}
+
+
+    .error{
+        min-width: 200px;
+        max-width:300px;
+        min-height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2em;
+        word-break: break-all;}
+    .error h3{font-weight: bold;}
+}
+
+

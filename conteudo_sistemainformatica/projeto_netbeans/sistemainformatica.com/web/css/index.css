@@ -1,0 +1,98 @@
+/*==============index.html==============*/
+#sectionIndex .btnService{
+    min-width: 200px;
+    max-width: 245px;
+    min-height: 60px;
+    max-height: 100px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    background: #101d42;
+    word-break: normal;
+    text-align: left;
+    cursor: default;
+    transition: 0.2s;
+    font-size: 1em;
+    text-align: left;
+    line-height: 20px;
+    color: white;}
+
+.social_icons i{
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    border: 3px solid;
+    border-color: transparent grey grey grey;
+    border-radius: 45px;
+    background: white;
+    line-height: 20px;
+    font-size: 1.6em;
+    color: #101d42;}
+#contato_facebook{display: none;}
+
+h3,h4{font-weight: bold;}
+.slider{display: none;}
+#conteudoIndex{border-color: transparent transparent transparent transparent;}
+
+@media screen and (min-width: 992px){
+    #sectionIndex .btnService{font-size: 1.1em;}
+    .slider{
+        display: block;
+        float: right;
+        width: 702px;
+        height: 480px;
+        margin-left: 46px;
+        margin-top: -10px;
+        border-radius: 5px;
+        background: white;
+        color: black;}
+    .slider img{border-radius: 5px;}
+    .divImg{
+        position: relative;
+        width: 100%;
+        height: 450px;
+        overflow: hidden;
+        z-index: 1;
+        background: white;}
+    .navImg{
+        position: relative;
+        max-width: 400px;
+        height: 25px;
+        margin: 0 auto;
+        background: white;
+        text-align: center;}
+    .navImg a{
+        display: inline-block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        margin-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        background: #101d42;
+        color: transparent;
+    }
+    .navImg a.activeSlide {
+        background: white; /* Cor quando ativo */}
+
+    .btnSlider{
+        position: relative;
+        float: right;
+        width: 50px;
+        height: 50px;
+        top: -90px;
+        right: 10px;
+        margin-left: 10px;
+        border: 4px solid white;
+        border-radius: 50px;
+        z-index: 1;
+        outline: none;
+        opacity: 0.6;
+        background: #252422;
+        font-size: 2em;
+        color: white;}
+    .btnSlider:hover{opacity: 1;}
+
+        
+}

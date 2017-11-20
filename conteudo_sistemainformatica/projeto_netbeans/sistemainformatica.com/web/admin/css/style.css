@@ -1,0 +1,304 @@
+@font-face{
+    src: url("../fonts/Lato-Light.ttf");
+    font-family: "Lato-Light";
+}
+
+/*===================PATTERN===================*/
+html,body{height: 100%;}
+html::-webkit-scrollbar{
+    width: 10px;
+    background: white;}
+html::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #101d42;}
+html::scrollbar{
+    width: 10px;
+    background: white;}
+html::scrollbar-thumb{
+    background: #101d42;}
+
+*{margin: 0; padding: 0;}
+
+/*===================MENU-SMALL===================*/
+.all{
+    position: absolute;
+    width: 100%;
+    height: 100%;}
+
+.menuSmall{
+    display: none;
+    z-index: 3;
+    background: #101d42;
+    font-family: "Lato-Light";}
+
+.btnCloseMenu{
+    float: right;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    padding: 0px 0px;
+    border-radius: 40px;
+    background: red;
+    font-size: 1.5em;
+    color: white;}
+
+.btnCloseContainer{
+    top: 10px;
+    right: 10px;}
+
+.nav{height: auto;}
+#navSmall{margin-top: 30px;}
+
+.ulMenu{list-style: none;}
+#ulSmall{
+    position: relative;
+    min-height: 350px;
+    background: #101d42;}
+
+.liMenuSmall{
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;}
+
+.liMenu i{
+    float: left;
+    width: 38px;
+    height: 38px;
+    padding: 5px 0px;
+    border-radius: 38px;
+    border: 3px solid white;
+    font-size: 1.5em;
+    color: white;}
+
+#liMenuSmall_pagInicial a,
+#liMenuSmall_empresa a,
+#liMenuSmall_servico a,
+#liMenuSmall_cliente a,
+#liMenuSmall_parceiro a,
+#liMenuSmall_contato a,
+#liMenuSmall_administrativo a
+{
+    text-decoration: none;
+    color: white;}
+
+.liMenu a{
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;}
+
+
+/*===================ADMINISTRATIVO-MOBILE===================*/
+#container_adminSmall{
+    display: none;
+    z-index: 3;
+    background: transparent;
+    font-family: "Lato-Light";}
+#container_adminSmall h3{font-weight: bold}
+#container_adminSmall a{
+    text-decoration: none;
+    color: #252422;}
+
+.adminSmall{
+    display: none;
+    background: white;}
+
+.button{
+    position: relative;
+    display: block;
+    border: none;
+    outline: none;}
+.btnOpcao{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background: #101d42;
+    font-size: 1.5em;
+    color: white;}
+
+.btnAdmin{
+    min-width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #101d42;
+    font-size: 1.1em;
+    color: white;}
+
+
+/*===================HEADER===================*/
+.header{
+    position: relative;
+    display: block;
+    height: 160px;
+    border-bottom: 10px solid grey;
+    background: #101d42;
+    font-family: "Lato-Light";
+    color: white;}
+
+.title{
+    position: relative;
+    font-size: 1.7em;}
+
+.btnLogout{
+    display: block;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+    color: #101d42;}
+
+.btnOpenMenu, .btnVoltar{
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid white;
+    cursor: pointer;
+    background: #252422;
+    font-size: 1.3em;
+    color: white;}	
+.btnVoltar{background: red;}
+
+.menuLong{display: none;}
+
+/*===================SECTION===================*/
+#sectionAdministrativo{
+    min-height: 400px;
+    background: white;
+    font-family: "Lato-Light";}
+
+.content{
+    position: relative;
+    display: block;
+    max-width: 950px;
+    margin: 0 auto;
+    background: white;}
+.content h3{font-weight: bold;}
+.content h6{
+    padding: 5px;
+    border-radius: 5px;
+    background: red;
+    font-weight: bold;
+    color: white;}
+
+#container_adminLong{
+    display: block;
+    max-width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;}
+#container_adminLong a, #container_adminLong a{
+    text-decoration: none;
+    color: #252422;}
+
+#empresa_admin,
+#servico_admin,
+#cliente_admin,
+#parceiro_admin,
+#contato_admin,
+#administrativo_admin{display: none;}
+
+.img{
+    width: 180px;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: white;}
+.img img{ 
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+}
+
+.trash_imagem{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 3px solid white;
+    background: #101d42;
+    font-size: 1.5em;
+    color: white;}
+.col2{margin-top: 80px;}
+
+/*===================TRATAMENTO DE TELAS===================*/
+@media screen and (min-width: 992px){
+    .btnOpcao{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;}
+    .btnAdmin{font-size: 1em;}
+    /*===================HEADER===================*/
+    .title{font-size: 2em;}
+    .btnLogout{
+        float: right;
+        font-size: 1.2em;}
+    .btnOpenMenu,.btnVoltar{display: none;}
+
+    .menuLong{
+        position: absolute;
+        display: block;
+        width: 992px;
+        height: 45px;
+        left: 50%;
+        margin-left: -496px;
+        bottom: 0;
+        border-top: 1px solid white;
+        background: #101d42;}
+
+    .liMenu{
+        position: relative;
+        display: inline-block;
+        width: 135px;
+        height: 39px;
+        top: 5px;
+        cursor: pointer;
+        background: none;}
+    .liMenu:nth-child(2){margin-left: 15px;}
+    .liMenu{transition: 0.2s;}
+    .liMenu:hover{border-bottom: 3px solid white;}
+
+    .liMenu button{
+        width: 100px;
+        top: 5px;
+        margin: 0 auto;
+        background: none;
+        font-size: 1.2em;}
+    .liMenu i{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 1.2em;}
+
+    /*===================SECTION===================*/
+    .content h6{display: none;}	
+
+    #empresa_admin,
+    #servico_admin,
+    #cliente_admin,
+    #parceiro_admin,
+    #contato_admin{display: none;}
+    
+    .col1{
+        float: left;
+        width: 300px;
+        margin-left: 100px;}
+    #col1 table th, #col1 table td{max-width: 300px;}
+
+    .col2{
+        float: right;
+        width: 300px;
+        margin-right: 100px;
+        margin-top: 0px;}
+    #col2 table th, #col2 table td{max-width: 300px;}
+
+}

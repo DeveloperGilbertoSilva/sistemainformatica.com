@@ -1,0 +1,38 @@
+.tableSmall{
+    margin-top: 50px;
+    font-size: 1.1em;
+    word-break: normal;}
+.tableSmall button{
+    width: 50px;
+    height: 50px;
+    margin: 2px auto;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    background: #101d42;
+    font-size: 1.5em;
+    color: white;}
+.tableSmall .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    border: 2px solid grey;}
+
+.tableSmall td{
+    max-width: 300px;
+    height: auto;
+    word-break: break-all;}
+
+.table_border{border: 1px solid #ccc;}
+.table_padding{padding: 10px;}
+
+#table a{text-decoration: none; color: #252422;}
+@media screen and (min-width: 480px){
+    .tableSmall{font-size: 1.3em;}
+    .tableSmall th,.tableSmall td{max-width: 400px;}
+}
+@media screen and (min-width: 992px){
+    .tableSmall button{
+        width: 40px;
+        height: 40px;
+        font-size: 1.2em;}}

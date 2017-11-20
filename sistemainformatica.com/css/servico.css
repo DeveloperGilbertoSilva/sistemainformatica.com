@@ -1,0 +1,231 @@
+/*==============servico.html==============*/
+.descricaoServicoSmall{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;}
+
+.descricaoServicoSmall h2, .descricaoServico h2{
+    position: relative;
+    top: 80px;
+    text-align: center;}
+.descricaoServicoSmall p, .descricaoServico p{
+    max-width: 650px;
+    margin: 0 auto;}
+
+.texto_small{
+    position: relative;
+    top: 100px;
+    padding: 5px;
+    text-align: justify;
+    word-break: normal;
+    word-spacing: -2px;
+    font-size: 1.2em;
+    font-family: "Lato";
+    color: #252422;}
+
+.descricaoServico{display: none;}
+
+#container_descricao{display: none;}
+
+.imgServicoSmall, .imgServico{
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    left: 10px;
+    top: 10px;
+    border-radius: 80px;}
+
+.imgServicoSmall{float: left;}
+.imgServico{display: none;}
+
+.btnCloseDescricao{
+    position: absolute;
+    float: right;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 10px;
+    border-radius: 35px;
+    border: none;
+    background: red;
+    text-align: center;
+    color: white;
+}
+
+#servico1{background: white;}
+
+#sectionServico .conteudo{border: none;}
+
+#menuService_servico h3 i{
+    width: 40px;
+    height: 40px;
+    padding: 10px 5px;
+    border-radius: 40px;
+    background: #101d42;
+    font-size: 0.8em;
+    color: white;}
+
+.btnMenuServico , .btnMenuServicoSmall{
+    float: left;
+    min-width: 220px;
+    max-width: 245px;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    background: #101d42;
+    word-break: normal;
+    text-align: left;
+    line-height: 20px;
+    font-size: 1em;
+    color: white;}
+.btnMenuServico{
+    transition: 0.2s;
+    background: white;
+    color: #252422;}
+.btnMenuServico:hover{
+    background: #101d42;
+    color: white;}
+
+.btnMenuServico .icon, .btnMenuServicoSmall .icon{
+    position: relative;
+    float: left;
+    width: 55px;
+    height: 55px;
+    left: -10px;
+    border-radius: 55px;
+    border: 3px solid;
+    border-color: transparent transparent transparent #ccc;
+    transition: 0.2s;
+    background: white;
+    text-align: center;
+    color: #252422;}
+
+.icon .img{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;}
+
+.btnMenuServico{display: none;}
+.galeria_icons{display: none;}
+
+@media screen and (min-width: 992px){
+    .btnMenuServicoSmall{display: none;}
+    .btnMenuServico{display: block;}
+
+    .menuServico{float: left;}
+
+    #container_descricao{display: block; float: right;}
+    .descricaoServico{
+        display: none;
+        position: relative;
+        float: right;
+        width: 700px;
+        min-height: 400px;
+        background: white;}
+    .descricaoServico h2{top:10px;}
+
+    .texto_long{
+        position: relative;
+        top: -20px;
+        margin-left: 20px;
+        text-align: justify;
+        word-break: normal;
+        word-spacing: -2px;
+        font-size: 1.2em;
+        font-family: "Lato";
+        color: #252422;}
+    .texto_long a{
+        text-decoration: none;
+        color: #101d42;
+    }
+
+    .imgServico{
+        display: block;
+        position: relative;
+        float: right;
+        right: 10px;}
+
+
+    .categoria{
+        display: block;
+        width: 600px;
+        height: 105px;
+        border-bottom: 1px solid white;
+        background: white;}
+
+    .limita_icons{
+        display: block;
+        position: relative;
+        width: 400px;
+        min-height: 90px;
+        max-height: 110px;
+        left: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        border-radius: 5px;
+        background: white;
+    }
+
+    .icon_categoria{
+        display: none;
+        width: 50px;
+        height: 50px;
+        margin-left: 15px;
+        border-radius: 50px;
+        border: 2px solid white;
+        text-align: center;
+        cursor: pointer;
+        color: white;}
+
+    .title_categoria{
+        display: none;
+        position: absolute;
+        max-width: 250px;
+        height: 20px;
+        min-height: 20px;
+        max-height: 30px;
+        padding: 3px;
+        border-radius: 5px;
+        background: rgba(0,0,0,.5);
+        font-size: 0.7em;
+        color: white;}
+    .icon_categoria:hover .title_categoria{display: block;}
+
+    /*===========================GALERIA===========================*/    
+    .painel_galeria_categoria{
+        position: absolute;
+        display: none;
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: -125px;
+        padding: 10px;
+        border-bottom: 2px solid #ccc;
+        border-radius: 5px;
+        z-index: 5;
+        overflow: auto;
+        background: white;
+    }
+    .painel_galeria_categoria a{text-decoration: none; outline: none;}
+    .painel_galeria_categoria .imgGaleria{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 2px solid grey;
+        transition: 0.2s;
+    }
+    .painel_galeria_categoria .imgGaleria:hover{
+        border-color: white;
+    }
+
+}

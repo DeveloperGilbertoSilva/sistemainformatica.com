@@ -1,0 +1,136 @@
+@font-face{
+    font-family: "Lato";
+    src: url('../fonts/Lato-Light.ttf');}
+
+/*==============empresa.html==============*/
+
+/*==============DESCRICAO-EMPRESA==============*/
+    .descricaoEmpresaSmall{
+        position: absolute;
+        display: none;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        z-index: 4;
+        background: white;
+        text-align: center;}
+
+    .btnCloseDescricao{
+        position: relative;
+        float: right;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        border: none;
+        border-radius: 30px;
+        background: red;
+        color: white;}
+
+    .descricaoEmpresaSmall h1{font-weight: bold;}
+    
+
+
+    #sectionEmpresa{
+        margin-top: 20px;}
+    #sectionEmpresa .conteudo{
+        max-width: 600px;
+        height: auto;
+        padding: 0px;
+        margin: 0px auto;
+        border: none;
+        background: white;}
+
+    #sectionEmpresa .menuEmpresa{
+        width: 150px;
+        margin: 0 auto;
+        background: white;}
+
+    .btnMenuEmpresaSmall,.btnMenuEmpresa{
+        display: block;
+        width: 150px;
+        border-radius: 50px;
+        background: white;
+        transition: 0.2s;
+        color: #252422;}
+    .btnMenuEmpresaSmall{
+        background: #101d42;
+        color: white;}
+    
+    .btnMenuEmpresaSmall span, .btnMenuEmpresa span{
+        line-height: 35px;
+        font-size: 1.2em;}
+    .btnMenuEmpresaSmall i,.btnMenuEmpresa i{
+        position: relative;
+        float: left;
+        width: 35px;
+        height: 35px;
+        left: -20px;
+        border-radius: 30px;
+        line-height: 32px;
+        background: white;
+        text-align: center;
+        font-size: 1.2em;
+        color: #101d42;}
+
+    
+    .btnMenuEmpresa:hover{background: #101d42; color: white;}
+
+    .btnMenuEmpresa{display: none;}
+
+    .descricaoEmpresa{display: none;}
+    .descricaoEmpresa p, .descricaoEmpresaSmall p{
+        text-align: justify;
+        word-break: normal;
+        word-spacing: -2px;
+        font-size: 1.2em;
+        font-family: "Lato";
+        color: #252422;}
+
+    #container_descricao{display: none;}
+    @media screen and (min-width: 992px){
+
+    /*==============empresa.html==============*/
+    .container_absolute{height: 100%; }
+
+    #sectionEmpresa .conteudo{
+        position: relative;
+        float: left;
+        min-width: 950px;
+        left: 50%;
+        margin-left: -475px;
+        background: white;}
+    
+    #sectionEmpresa .menuEmpresa{float: left;}
+    .btnMenuEmpresaSmall{display: none;}
+    .btnMenuEmpresa{display: block;}    
+
+    #container_descricao{
+        display: block;
+        font-family: "Lato";}
+    
+    .descricaoEmpresa{
+        float: left;
+        width: 700px;
+        min-height: 350px;
+        margin-left: 20px;
+        margin-top: 40px;
+        background: white;
+        color: black;}
+
+    .iconDescricao{
+        position: relative;
+        float: right;
+        width: 70px;
+        height: 70px;
+        top: -50px;
+        right: -20px;
+        border-radius: 70px;
+        border: 1px solid;
+        border-color: transparent transparent grey grey;
+        background: white;
+        line-height: 70px;
+        font-size: 2.5em;
+        color: #101d42;
+    }
+    }

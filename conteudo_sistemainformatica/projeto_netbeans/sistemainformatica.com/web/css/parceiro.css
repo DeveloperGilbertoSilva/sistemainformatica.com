@@ -1,0 +1,56 @@
+/*==============parceiro.jsp==============*/
+#sectionParceiro{background: white;}
+#sectionParceiro .conteudo{
+    margin: 0 auto;
+    border: none;
+    background: white;}
+
+#sectionParceiro .conteudo h3 i{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background: #101d42;
+    text-align: center;
+    line-height: 40px;
+    font-size: 0.8em;
+    color: white;
+}
+
+.parceiro{
+    display: block;
+    min-width: 150px;
+    max-width: 250px;
+    min-height: 300px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow: auto;
+    background: white;
+    word-break: break-all;}
+
+.logo_parceiro{
+    width: 80px;
+    height: 80px;
+    border-radius: 60px;
+    border: 2px solid grey;}
+.parceiro h4, .parceiro h5{text-align: center;}
+
+.parceiro p{
+    padding: 5px;
+    margin-top: 5px;
+    text-align: justify;}
+.parceiro a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 992px){
+    #sectionParceiro .conteudo{
+        float: none;
+        left: 0;
+        margin-left: auto;}
+    .parceiro{
+        display: inline-block;
+        margin-left: 10px;}
+}

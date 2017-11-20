@@ -1,0 +1,110 @@
+/*==============ADMIN-GALERIA==============*/
+.categoria{
+    min-width: 200px;
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 3px grey;
+    border-radius: 5px;}
+
+#config_categoria, #config_galeria, #add_galeria{
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    padding-top: 14px; 
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;}
+
+#config_categoria i{font-size: 1.3em;}
+#config_galeria i{font-size: 1.3em;}
+#add_galeria i{font-size: 1.3em;}
+
+.fundo{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: white;
+    font-family: "Lato-Light";}
+.fundo h3,.fundo h4{
+    width: auto;
+    background: #101d42;
+    color: white;}
+.fundo h4{
+    max-width: 320px;
+    padding: 5px;
+    border-radius: 5px;}
+
+.painel{
+    position: relative;
+    min-width: 200px;
+    max-width: 700px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3px;
+    border: none;
+    opacity: 1;
+    transition: all 0.5s;
+    background: none;}
+.painel h3{text-align: center;}
+
+.insert, .list, .alter, .insert_galeria, .galeria{
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: white;}
+.insert #select_servico{font-size: 0.7em;}
+.alter #select{font-size: 0.7em;}
+
+.insert_galeria #select_categoria_servico{font-size: 0.7em;}
+
+.insert form input[type="submit"], .alter form input[type="submit"], .insert_galeria form input[type="submit"]{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #101d42;
+    color: white;}
+
+.list, .galeria{margin-top: 20px;}
+
+.list,.galeria{
+    overflow: auto;
+    background: white;}
+
+.btnClosePainel{
+    position: absolute;
+    float: right;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+    top: -50px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: red;
+    color: white;}
+.btnClosePainel i{font-size: 1.4em;}
+
+@media screen and (min-width: 992px){
+    .painel{
+        min-width: 900px;
+        max-width: 900px;}
+    .insert,.insert_galeria{
+        float: left;
+        width: 400px;}
+    .list, .galeria{
+        float: right;
+        min-width: 400px;
+        max-width: 400px;
+        margin-top: 0px;}
+    
+    .alter{width: 900px;}
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 992px){
+    .container-fluid{height: auto;}
+    .header{height: 170px;}
+    .logo{margin-top: 80px;}
+    .section{margin-top: 1%;}
+    .conteudo{
+        position: relative;
+        float: left;
+        left: 50%;
+        margin-left: -490px;}
+    .menuService{
+        float: left;
+        margin-bottom: 10px;} 
+
+    .footer .conteudo{
+        min-width: 700px;
+        margin-left: -350px;
+        padding: 10px;}
+    .footer .conteudo h2{float: left;}
+    .footer .conteudo #titleTelefone{
+        float: right;
+        text-align: left;}
+}

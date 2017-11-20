@@ -1,0 +1,133 @@
+@media screen and (min-width: 160px){
+    .btnMenu{
+        position: absolute;
+        float: right;
+        display: block;
+        width: auto;
+        height: 30px;
+        top: 20px;
+        right: 20px;
+        border: none;
+        outline: none;
+        background: white;
+        text-align: center;
+        font-size: 2.5em;
+        color: #101d42;}
+    #openMenu{
+        background: none;
+        color: white;}
+    .btnMenu i{
+        position: relative;
+        top: -10px;}
+    .menuSmall{
+        position: absolute;
+        display: none;
+        height: 100%;
+        color: #101d42;
+        background: white;
+        z-index: 1;}
+    .menuSmall ul{
+        position: relative;
+        max-width: 100px;
+        top: 20px;
+        list-style: none;}
+    .menuSmall ul li{
+        font-size: 0.9em;
+        margin: 20px;
+        cursor: pointer;}
+    .menuSmall ul li i{
+        width: 50px;
+        height: 50px;
+        padding: 10px 5px;
+        border-radius: 50px;
+        border: 3px solid #101d42;
+        font-size: 2em;
+        background: #101d42;
+        color: white;}
+
+    .menuLong{
+        position: fixed;
+        display: block; 
+        height: 65px;
+        z-index: 3;
+        background: #101d42;}
+    .menuLong nav{display: none;}}
+
+@media screen and (min-width: 992px){
+    .btnMenu{display: none;}
+    .menuSmall{display: none;}
+    .menuLong nav{
+        display: block;
+        max-width: 900px;
+        height: 65px;}
+    .menuLong ul{
+        display: block;
+        float: left;
+        width: 700px;
+        height: 65px;
+        margin-left: 100px;
+        list-style: none;}
+    .menuLong li{
+        display: inline-block;
+        float: left;
+        width: 130px;
+        height: 50px;
+        margin-top: 7.5px;
+        margin-left: 10px;
+        padding: 8px 0px;
+        transition: 0.2s;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-family: "Lato";
+        color: white;}
+    #li_empresa, #li_servico{height: auto;}
+    #li_empresa,#li_servico{border-bottom: none;}
+    
+    .menuLong li:hover{border-bottom: 2px solid white;}
+    
+/*===============SUB-MENU===============*/    
+    #sub_menu_empresa, #sub_menu_servico{
+        position: absolute;
+        display: none;
+        width: 130px;
+        height: auto;
+        background: #101d42;
+        font-family: "Lato";}
+    #sub_menu_empresa ul, #sub_menu_servico ul{
+        width: 130px;
+        height: auto;
+        margin: 0;
+        background: transparent;}
+    #sub_menu_empresa ul li, #sub_menu_servico ul li{
+        display: block;
+        float: none;
+        width: 110px;
+        height: auto;
+        min-height: 30px;
+        margin: 10px auto;
+        padding: 4px;
+        border-bottom: 1px solid;
+        border-color: transparent transparent white transparent;
+        text-align: center;
+        font-size: 0.9em;
+        color: white;}
+    #sub_menu_servico ul li:last-child{border-bottom: none;}
+    
+    #sub_menu_empresa ul li:hover{
+        border-bottom: none;
+        background: grey;
+        color: white;}
+
+    #sub_menu_servico ul li:hover{
+        background: grey;
+        color: white;}
+    
+    .menuLong li:first-child{margin-left: 5px;}
+    .menuLong li i{
+        width: 32px;
+        height: 32px;
+        padding: 6px 0px;
+        border-radius: 30px;
+        border:  2px solid white;}
+}
+

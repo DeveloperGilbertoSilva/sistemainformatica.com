@@ -1,0 +1,53 @@
+Funcionalidades:
+
+LOGOMARCA
+Alterar logomarca
+Excluir logomarca atual
+
+SLIDER
+Inserir imagem no slider
+Lista de imagens do slider
+Alterar imagens do slider
+Excluir imagens do slider
+
+EMPRESA
+Alterar conteúdo do histórico da empresa
+
+SERVIÇO
+Inserir serviço
+Listar serviço
+Alterar serviço
+Excluir serviço
+
+CATEGORIA-SERVIÇO
+Inserir categoria de serviço
+Listar categoria de serviço
+Alterar categoria de serviço
+Excluir categoria de serviço
+
+GALERIA DE CATEGORIA DE SERVIÇO
+Inserir galeria categoria de serviço
+Listar galeria de categoria de serviço
+Excluir galeria de categoria de serviço
+
+CLIENTE
+Inserir cliente
+Listar cliente
+Alterar cliente
+Excluir cliente
+
+PARCEIRO
+Inserir parceiro
+Listar parceiro
+Alterar parceiro
+Excluir parceiro
+
+CONTATO	
+Inserir contato
+Listar contato
+Alterar contato
+Excluir contato
+
+AUTENTICAÇÃO (Administrativo)
+Auterar autenticação
+
